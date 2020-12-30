@@ -155,7 +155,6 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/Kennedy_Carol-032.jpg');
     text-align: center;
     color: white;
     .header-content {
@@ -183,6 +182,7 @@ header {
         }
     }
     @media (min-width: 768px) {
+        background-image: url('../img/Kennedy_Carol-032.jpg');
         min-height: 100%;
         .header-content {
             position: absolute;
@@ -203,6 +203,10 @@ header {
                 }
             }
         }
+    }
+    @media (max-width: 768px) {
+        background-color: #dfe3e7;
+        max-height: auto;
     }
 }
 
